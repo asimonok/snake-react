@@ -1,0 +1,36 @@
+.root {
+  padding: 16px 20px;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.list li {
+  border-bottom: 1px solid var(--color-accent1);
+  text-align: left;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.place {
+  margin-right: 1em;
+  font-size: .75em;
+  width: 32px;
+  display: block;
+}
+
+.username {
+  /*flex: none;*/
+}
+
+.scores {
+  display: block;
+  min-width: 60px;
+  text-align: right;
+  font-weight: bold;
+}

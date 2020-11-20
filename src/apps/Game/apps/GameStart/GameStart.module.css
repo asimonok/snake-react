@@ -1,0 +1,22 @@
+.root {
+  padding: 16px 0;
+}
+
+.header {
+  margin-bottom: 1em;
+}
+
+.form {
+  max-width: 300px;
+  margin: 0 auto 32px;
+}
+
+.input {
+  display: block;
+  margin-bottom: 1em;
+  border: 1px solid var(--color-text);
+  font-size: 1.5em;
+  width: 100%;
+  padding: 0.5em 1em;
+  border-radius: .25em;
+}

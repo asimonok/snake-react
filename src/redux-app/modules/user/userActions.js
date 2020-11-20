@@ -1,0 +1,8 @@
+export const SET_USERNAME = 'user/SET_USERNAME'
+
+export const setUsername = username => ({
+  type: SET_USERNAME,
+  payload: {
+    username,
+  },
+})

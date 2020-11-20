@@ -1,0 +1,131 @@
+.root {
+  height: 100%;
+}
+
+.gameAreaContainer {
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.gameArea {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--color-accent2)
+}
+
+.scores {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0.5em 1em;
+  font-size: 0.75em;
+  background-color: #ffffff;
+  opacity: .6;
+}
+
+.gameObject {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  background-image: url('./images/snake-graphics.png');
+  background-position: top left;
+}
+
+.gameControls {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  opacity: .3;
+  width: 200px;
+  height: 130px;
+}
+
+.gameControl {
+  position: absolute;
+  background-color: rgba(255, 255, 255, .6);
+  border: none;
+  outline: none;
+  width: 33%;
+  height: 49%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gameControl.pressed {
+  background-color: rgba(255, 255, 255, .9);
+}
+
+.gameControl img {
+  width: 75%;
+  height: auto;
+}
+
+.gameControl.up {
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.gameControl.right {
+  right: 0;
+  bottom: 0;
+}
+
+.gameControl.left {
+  left: 0;
+  bottom: 0;
+}
+
+.gameControl.down {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.gamePopup {
+  position: absolute;
+  background-color: rgba(0, 0, 0, .7);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.gamePopupContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 320px;
+  background-color: #ffffff;
+  padding: 16px 20px;
+}
+
+.gamePopupContent h2 {
+  marginb-bottom: 1em;
+}
+
+.gamePopupContent div {
+  margin-bottom: 2em;
+}
+
+.gamePopupContent button {
+  margin-bottom: 1em;
+}
+
+.pauseButton {
+  position: absolute;
+  border: none;
+  right: 0;
+  top: 0;
+  background-color: #ffffff;
+  opacity: .3;
+  padding: 6px 12px;
+  cursor: pointer;
+  right: 0;
+  top: 0;
+}

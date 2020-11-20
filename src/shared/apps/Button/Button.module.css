@@ -1,0 +1,25 @@
+.root {
+  background-color: var(--color-secondary);
+  color: #ffffff;
+  box-shadow: none;
+  border-radius: 0.25em;
+  font-size: 1em;
+  padding: 0.5em 1em;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.root:hover {
+  background-color: var(--color-main);
+}
+
+.fluid {
+  display: block;
+  width: 100%;
+}
+
+.large {
+  font-size: 1.5em;
+}
